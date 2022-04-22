@@ -1,5 +1,4 @@
 import random
-import time
 
 print("====EJERCICIO N°4")
 
@@ -14,7 +13,5 @@ def bubble_sort(lista1):
 
 lista1 = [random.randint(0, 99) for x in range(5)]
 print("Generando lista aleatoria...")
-time_duration = 2
-time.sleep(time_duration)
 print("Tu lista generada sin ordenar: " ,lista1)
 print("La lista ordenada: ", bubble_sort(lista1)) 
