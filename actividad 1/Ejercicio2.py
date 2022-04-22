@@ -1,16 +1,12 @@
+año = int(input('Introduce un año: '))
 
-from operator import truediv
-
-
-print("ejercicio 2")
-
-def bisisesto(año):
-    if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
-        print (año, " es viciesto")
+if año % 4 == 0:
+    if año % 100 == 0:
+        if año % 400 == 0:
+            print('El año es bisiesto')
+        else:
+            print('El año no es bisiesto')
     else:
-        print (año, " no es viciesto")
-while True:
-  año= int(input("digame el año "))
-  bisisesto(año)
-
- 
+        print('El año es bisiesto.')
+else:
+    print('El año no es bisiesto.')
