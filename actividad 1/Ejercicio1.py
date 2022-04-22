@@ -14,4 +14,4 @@ while True:
   print(lista)
   nrandom= int(input("ingrese el numero q quiera buscar "))
   buscador(nrandom)
-  
+    
