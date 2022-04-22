@@ -4,6 +4,6 @@ def palindromo():
     if str(word) == str(word)[::-1] :
         print("Esta palabra es un palíndromo")
     else:
-        print("No es un palíndromo UnU")
+        print("No es un palíndromo ")
 
 palindromo()
