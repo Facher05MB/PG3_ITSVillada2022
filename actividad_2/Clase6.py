@@ -1,19 +1,21 @@
-from audioop import add
-
-
 class Familia():
-    def __init__(self):
-        self.Padre = input("nombre del padre ")
-        self.Madre = input("nombre de la madre ")
-        self.numelista = int(input("cuantos hijos tines "))
-        self.hijos = []
-        self.numero_hijo = int(0)
-        if (self.numelista > self.numero_hijo):
-            self.nombrehijo = input("escriba el nombre de tu hijo n°", self.numero_hijo)
-            self.hijos.append(self.nombrehijo)
-            self.numero_hijo = self.numero_hijo + 1
-            print(self.hijos)
+    def __init__(self, papa, mama, hijos):
+        self.papa = papa
+        self.mama = mama
+        self.hijos = hijos
+        self.hijos_list = []
 
+    def añadir_hijos(self, hijo):
+        self.hijos_list.append(hijo)
 
-hijos = list()
-F1=Familia()
+    def __str__(self):
+        return "Familia: " + self.name + " hijos: " + self.hijos_list
+
+fami = Familia()
+fami.papa = "Curcuru"
+fami.mama = "maya"
+fami.hijos = "3"
+fami.añadir_hijo("Cativa")
+fami.añadir_hijo("Lichi")
+fami.añadir_hijo("Alejo")
+print(fami)
