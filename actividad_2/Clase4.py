@@ -31,8 +31,10 @@ class Calculadora():
         try:
             self.resultado = self.numero1 / self.numero2
             print("resultado de dividision", self.resultado)
+            print("\n")
         except:
             print("cualquie numero dividio por 0 es infinto")
+            print("\n")
 
 
 # bloque principal

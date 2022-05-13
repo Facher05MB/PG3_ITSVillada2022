@@ -1,4 +1,5 @@
 class Persona():
+    """sasd"""
     def inicializar(self,nom):
         self.nombre=nom
 
@@ -14,3 +15,4 @@ persona1.imprimir()
 persona2=Persona()
 persona2.inicializar("rodrigo")
 persona2.imprimir()
+

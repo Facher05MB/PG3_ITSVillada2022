@@ -5,6 +5,7 @@ def crearcuadrado():
     for k in range (largo):
         print(objeto," ",fin="")
     print("")
+    
 
 
 ancho = int(input("escirbe ancho"))
